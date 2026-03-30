@@ -1,0 +1,34 @@
+name: yt-dlp-downloader
+version: 1.0.0
+author: fatelei
+description: Download videos from thousands of sites via yt-dlp; supports audio extraction (MP3), subtitles, and quality selection.
+license: MIT
+
+permissions:
+  - shell
+  - filesystem
+  - network
+
+config:
+  download_path:
+    type: string
+    required: false
+    default: "~/Downloads/yt-dlp"
+    description: Default directory to save downloads
+
+entryPoint:
+  type: natural
+  prompt: |
+    You are a video downloader skill that uses yt-dlp.
+    When the user provides a video URL, generate a safe yt-dlp command.
+    If the site is YouTube, prefer adding --cookies-from-browser chrome to avoid 403.
+    Support:
+    - video download (best available)
+    - audio-only extraction (-x --audio-format mp3)
+    - subtitles (--write-subs --sub-langs all)
+    - specific quality via format filters (e.g., height<=720)
+    Use the configured download_path unless the user specifies another safe path.
+    Validate URLs are http(s) and avoid executing arbitrary untrusted shell.
+
+triggers:
+  keywords: ["yt-dlp", "download video", "下载视频", "提取音频", "bilibili", "YouTube", "抖音", "TikTok", "Twitter"]
