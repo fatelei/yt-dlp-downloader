@@ -27,17 +27,13 @@ This skill declares installer metadata so the OpenClaw UI/CLI can assist with in
 ## Install (local)
 Validate and install the skill into your OpenClaw instance:
 
-1) Validate
+
+1) Install
 ```
-openclaw skills validate ./openclaw/yt-dlp-downloader
+openclaw skills install ./yt-dlp-downloader
 ```
 
-2) Install
-```
-openclaw skills install ./openclaw/yt-dlp-downloader
-```
-
-3) Verify
+2) Verify
 ```
 openclaw skills list
 ```
