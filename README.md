@@ -11,7 +11,7 @@ A standalone OpenClaw-compatible version of the yt-dlp downloader skill. It down
 
 ## Directory
 ```
-openclaw/yt-dlp-downloader/
+yt-dlp-download-skill
 ├── SKILL.md          # OpenClaw skill instructions + gating/installer metadata
 ├── skill.yaml        # OpenClaw manifest (name/version/permissions/entryPoint)
 └── scripts/
@@ -30,7 +30,7 @@ Validate and install the skill into your OpenClaw instance:
 
 1) Install
 ```
-openclaw skills install ./yt-dlp-downloader
+openclaw skills install ./yt-dlp-download-skill
 ```
 
 2) Verify
@@ -44,7 +44,7 @@ openclaw skills list
 {
   skills: {
     entries: {
-      "yt-dlp-downloader": { enabled: true }
+      "yt-dlp-download-skill": { enabled: true }
     }
   }
 }

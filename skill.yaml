@@ -1,4 +1,4 @@
-name: yt-dlp-downloader
+name: yt-dlp-download-skill
 version: 1.0.0
 author: fatelei
 description: Download videos from thousands of sites via yt-dlp; supports audio extraction (MP3), subtitles, and quality selection.

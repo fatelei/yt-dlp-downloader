@@ -1,5 +1,5 @@
 ---
-name: yt-dlp-downloader
+name: yt-dlp-download-skill
 description: Download videos from YouTube, Bilibili, Twitter/X, TikTok/Douyin and more using yt-dlp. Use when the user provides a video URL to download video, extract MP3 audio, fetch subtitles, or choose quality (720p/1080p/best).
 metadata:
   openclaw:
